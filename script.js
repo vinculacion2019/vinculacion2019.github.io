@@ -541,6 +541,8 @@ function join(){
 					me.data.steer = Math.PI / 15;
 				if(right)
 					me.data.steer = -Math.PI / 15;
+				if(down)
+					me.data.steer = 0;
 				if(!(left ^ right))
 					me.data.steer = 0;
 			}
@@ -968,6 +970,11 @@ document.addEventListener("keydown", function (e) {
 					right = true;
 				}
 	}
+	if(e.keyCode ==40)
+	{
+		down = true;
+	}
+	
 });
 /*document.addEventListener("keyup", function (e) {
 	if (e.keyCode == 37) {
