@@ -973,6 +973,7 @@ document.addEventListener("keydown", function (e) {
 	if(e.keyCode ==40)
 	{
 		down = true;
+		console.log('pressed');
 	}
 	
 });
