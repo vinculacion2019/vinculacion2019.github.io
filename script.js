@@ -958,7 +958,6 @@ document.addEventListener("keydown", function (e) {
 	if (e.keyCode == 37) {
 		// console.log(canMove.left);
 		if (canMove.left) {
-			down = false;
 			right=false;
 			left = true;
 		}
@@ -967,15 +966,9 @@ document.addEventListener("keydown", function (e) {
 	if (e.keyCode == 39) {
 				// console.log(canMove.right);
 				if (canMove.right) {
-					down = false;
 					left= false;
 					right = true;
 				}
-	}
-	if(e.keyCode ==40)
-	{
-		down = true;
-		console.log("pressed");
 	}
 	
 });
